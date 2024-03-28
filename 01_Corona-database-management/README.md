@@ -18,7 +18,7 @@ This project is aimed at managing a health maintenance organization's database, 
 ## Installation Guide
 
 1. **Download the Code from GitHub**:
-   - Open the project page on GitHub: [Corona Database Management-HMO](https://github.com/Hadassa-E/HomeTest-H04).
+   - Open the project page on GitHub: [Corona Database Management-HMO](https://github.com/Hadassa-E/HomeTest-Hds04).
    - Click on the "Code" button and then on "Download ZIP" to download the code to your computer.
 
 2. **Installation with Visual Studio 2022**:
