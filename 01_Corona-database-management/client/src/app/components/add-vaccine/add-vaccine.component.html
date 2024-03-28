@@ -1,0 +1,18 @@
+<h3>{{"הוספת חיסון ל"+this.ms.member.MemberFirstname+" "+this.ms.member.MemberLastname}}</h3>
+<form action="/action_page.php" class="frm" (ngSubmit)="check()" [formGroup]="this.vtForm">
+    <div class="mb-3 mt-3">
+        <label for="date" class="form-label">תאריך חיסון:</label>
+        <input type="date" placeholder="תאריך חיסון" class="form-control" formControlName="date">
+        <div
+            *ngIf="vtForm.get('date')?.invalid && (vtForm.get('date')?.touched || vtForm.get('date')?.dirty)">
+            <p *ngIf="vtForm.get('date')?.errors?.['required']" class="p-invalid-feedback">שדה חובה</p>
+        </div>
+    </div>
+    <div class="mb-3 mt-3">
+        <label for="vaccineType" class="form-label">יצרן החיסון:</label>
+        <select id="vaccineType" formControlName="vaccineType" class="form-control" required>
+            <option *ngFor="let vt of this.vts.allVaccineTypes" [value]="vt.VaccineTypeId">{{vt.VaccineTypeManufacturer}}</option>
+        </select></div>
+    
+     <br><input type="submit"[disabled]="!vtForm.valid">
+</form>

@@ -1,0 +1,38 @@
+*{
+    text-align: right;
+}
+.frm{
+    width:50%;
+    margin:auto;
+}
+
+input[type="button"] {
+    margin: 20px;
+    background-color: #5f9ea0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display: inline;
+}
+
+input[type="button"]:hover {
+    background-color: #5f9ea0a8;
+}
+.card{
+    border-radius: 20px;
+    border: 5px #5f9ea0 solid;
+    margin: 40px;
+    float:right;
+    padding: 40px;
+    font-size: large;
+}
+.c{
+    width:650px;
+    height:200px;
+}
+.ca{
+    width:650px;
+    height:auto;
+    display: block;
+}

@@ -1,0 +1,43 @@
+C:\Users\Hadassa\Desktop\Twitter_Towers\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.exe
+C:\Users\Hadassa\Desktop\Twitter_Towers\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.deps.json
+C:\Users\Hadassa\Desktop\Twitter_Towers\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.runtimeconfig.json
+C:\Users\Hadassa\Desktop\Twitter_Towers\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.dll
+C:\Users\Hadassa\Desktop\Twitter_Towers\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.pdb
+C:\Users\Hadassa\Desktop\Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hadassa\Desktop\Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.AssemblyInfoInputs.cache
+C:\Users\Hadassa\Desktop\Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.AssemblyInfo.cs
+C:\Users\Hadassa\Desktop\Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.csproj.CoreCompileInputs.cache
+C:\Users\Hadassa\Desktop\Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.dll
+C:\Users\Hadassa\Desktop\Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\refint\Twitter_Towers.dll
+C:\Users\Hadassa\Desktop\Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.pdb
+C:\Users\Hadassa\Desktop\Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.genruntimeconfig.cache
+C:\Users\Hadassa\Desktop\Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\ref\Twitter_Towers.dll
+C:\Users\Hadassa\Desktop\‏‏Twitter_Towers - עותק\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hadassa\Desktop\‏‏Twitter_Towers - עותק\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.AssemblyInfoInputs.cache
+C:\Users\Hadassa\Desktop\‏‏Twitter_Towers - עותק\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.AssemblyInfo.cs
+C:\Users\Hadassa\Desktop\‏‏Twitter_Towers - עותק\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.csproj.CoreCompileInputs.cache
+C:\Users\Hadassa\Desktop\‏‏Twitter_Towers - עותק\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.dll
+C:\Users\Hadassa\Desktop\‏‏Twitter_Towers - עותק\Twitter_Towers\obj\Debug\net8.0\refint\Twitter_Towers.dll
+C:\Users\Hadassa\Desktop\‏‏Twitter_Towers - עותק\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.pdb
+C:\Users\Hadassa\Desktop\‏‏Twitter_Towers - עותק\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.exe
+C:\Users\Hadassa\Desktop\‏‏Twitter_Towers - עותק\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.deps.json
+C:\Users\Hadassa\Desktop\‏‏Twitter_Towers - עותק\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.runtimeconfig.json
+C:\Users\Hadassa\Desktop\‏‏Twitter_Towers - עותק\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.dll
+C:\Users\Hadassa\Desktop\‏‏Twitter_Towers - עותק\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.pdb
+C:\Users\Hadassa\Desktop\‏‏Twitter_Towers - עותק\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.genruntimeconfig.cache
+C:\Users\Hadassa\Desktop\‏‏Twitter_Towers - עותק\Twitter_Towers\obj\Debug\net8.0\ref\Twitter_Towers.dll
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.exe
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.deps.json
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.runtimeconfig.json
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.dll
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\bin\Debug\net8.0\Twitter_Towers.pdb
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.AssemblyInfoInputs.cache
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.AssemblyInfo.cs
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.csproj.CoreCompileInputs.cache
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.sourcelink.json
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.dll
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\refint\Twitter_Towers.dll
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.pdb
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\Twitter_Towers.genruntimeconfig.cache
+C:\GitHub\Home-Test-H04\02_Twitter-towers\‏‏Twitter_Towers\Twitter_Towers\obj\Debug\net8.0\ref\Twitter_Towers.dll

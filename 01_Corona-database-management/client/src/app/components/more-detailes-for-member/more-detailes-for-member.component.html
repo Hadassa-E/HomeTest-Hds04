@@ -1,0 +1,39 @@
+<div>
+    <h3>{{this.ms.member.MemberFirstname+" "+this.ms.member.MemberLastname}}</h3>
+    <div class="card">
+       <h4>פרטים אישיים</h4>
+       <br>
+        <img src={{this.ms.member.MemberPic}} *ngIf="this.ms.member.MemberPic!=null">
+        <p>מספר זהות: {{this.ms.member.MemberId}}</p>
+        <p>תאריך לידה: {{this.ms.member.MemberBirthdate}}</p>
+        <p>כתובת: {{this.ms.member.MemberAddressStreet+" "+this.ms.member.MemberAddressBuildingNumber+", "+this.cityName}}</p>
+        <p [hidden]="this.ms.member.MemberPhone==null">פלאפון: {{this.ms.member.MemberPhone}}</p>
+        <p [hidden]="this.ms.member.MemberTelephone==null">טלפון: {{this.ms.member.MemberTelephone}}</p>
+        <input type="button" value="עדכון חבר" (click)="NevigateToUpdateMember()">
+        <input type="button" value="מחיקת חבר" (click)="DeleteMember()">
+    </div>
+    
+    <div class="card c">
+        <h5>מחלת הקורונה:</h5>
+        <h5 [hidden]="!this.ms.member.MemberWasSick">חולי בקורונה:</h5>
+        <p [hidden]="!this.ms.member.MemberWasSick">בין התאריכים:
+            {{this.coronaInfectionForMember.CoronaInfectionFromDate}} עד
+            {{this.coronaInfectionForMember.CoronaInfectionToDate}}</p>
+        <input type="button" value="הוספת פרטים על חולי בקורונה" [hidden]="this.ms.member.MemberWasSick"
+            (click)="NevigateToCoronaInfection()">
+    </div>
+    <div class="card ca">
+        <h5>חיסוני קורונה</h5>
+        <div [hidden]="this.ms.member.MemberCountOfVaccines==0">
+            <h5>התחסן/ה סך הכל {{this.ms.member.MemberCountOfVaccines}} פעמים.</h5>
+            <h5>פירוט חיסונים:</h5>
+            <ul>
+                <li *ngFor="let i of this.vaccinesForMember">חיסון של חברת {{i.VaccineVaccineTypeName}}. החיסון בוצע
+                    בתאריך: {{i.VaccineDate}}.</li>
+            </ul>
+        </div>
+        <p [hidden]="this.ms.member.MemberCountOfVaccines!=0">{{this.ms.member.MemberFirstname+"
+            "+this.ms.member.MemberLastname+" לא התחסן/ה כלל."}}</p>
+        <input type="button" value="הוספת חיסון קורונה" [hidden]="this.ms.member.MemberCountOfVaccines==4"
+            (click)="NevigateToVaccine()">
+    </div>

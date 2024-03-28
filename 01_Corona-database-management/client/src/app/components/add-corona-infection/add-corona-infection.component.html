@@ -1,0 +1,21 @@
+<h3>{{"הוספת חולי בקורונה ל"+this.ms.member.MemberFirstname+" "+this.ms.member.MemberLastname}}</h3>
+<form action="/action_page.php" class="frm" (ngSubmit)="check()" [formGroup]="this.ciForm">
+    <div class="mb-3 mt-3">
+        <label for="fromdate" class="form-label">מועד קבלת תוצאה חיובית:</label>
+        <input type="date"class="form-control" formControlName="fromdate">
+        <div
+            *ngIf="ciForm.get('fromdate')?.invalid && (ciForm.get('fromdate')?.touched || ciForm.get('fromdate')?.dirty)">
+            <p *ngIf="ciForm.get('fromdate')?.errors?.['required']" class="p-invalid-feedback">שדה חובה</p>
+        </div>
+    </div>
+    <div class="mb-3 mt-3">
+        <label for="todate" class="form-label">מועד ההחלמה:</label>
+        <input type="date" class="form-control" formControlName="todate">
+        <div
+            *ngIf="ciForm.get('todate')?.invalid && (ciForm.get('todate')?.touched || ciForm.get('todate')?.dirty)">
+            <p *ngIf="ciForm.get('todate')?.errors?.['required']" class="p-invalid-feedback">שדה חובה</p>
+        </div>
+    </div>
+     <br><input type="submit"[disabled]="!ciForm.valid">
+</form>
+

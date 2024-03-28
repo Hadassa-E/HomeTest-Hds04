@@ -1,0 +1,21 @@
+<h1>חברי קופת חולים</h1>
+<p>לפרטים נוספים על חבר, לחץ על השורה בה הוא מופיע.</p>
+<table class="table table-bordered">
+    <tr>
+        <th>מספר זהות</th>
+        <th>שם פרטי</th>
+        <th>שם משפחה</th>
+        <th>תאריך לידה</th>
+        <th>האם חלה בקורונה</th>
+        <th>מספר חיסונים</th>
+    </tr>
+    <tr *ngFor="let i of this.ms.members" (click)="moreDetails(i)">
+        <td>{{i.MemberId}}</td>
+        <td>{{i.MemberFirstname}}</td>
+        <td>{{i.MemberLastname}}</td>
+        <td>{{i.MemberBirthdate}}</td>
+        <td><input type="checkbox" [checked]="i.MemberWasSick" disabled></td>
+        <td>{{i.MemberCountOfVaccines}}</td>
+    </tr>
+</table>
+<router-outlet></router-outlet>

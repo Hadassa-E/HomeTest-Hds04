@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\API",
+    "\\API\\Controllers",
+    "\\BLL",
+    "\\BLL\\Functions",
+    "\\DAL",
+    "\\DAL\\DAL",
+    "\\DAL\\DAL\\Functions",
+    "\\DAL\\DAL\\Interfaces",
+    "\\DAL\\DAL\\Models",
+    "\\DTO"
+  ],
+  "SelectedNode": "\\DAL\\DAL.sln",
+  "PreviewInSolutionExplorer": false
+}

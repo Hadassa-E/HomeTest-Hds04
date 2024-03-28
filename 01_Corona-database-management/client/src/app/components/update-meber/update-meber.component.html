@@ -1,0 +1,73 @@
+<h1>עדכון חבר קיים</h1>
+<form action="/action_page.php" class="frm" (ngSubmit)="check()" [formGroup]="this.memberForm">
+    <div class="mb-3 mt-3">
+        <label for="firstname" class="form-label">שם פרטי:</label>
+        <input type="text" placeholder="שם פרטי" class="form-control" formControlName="firstname" [value]="this.ms.member.MemberFirstname">
+        <div *ngIf="memberForm.get('firstname')?.invalid && (memberForm.get('firstname')?.touched || memberForm.get('firstname')?.dirty)">
+            <p *ngIf="memberForm.get('firstname')?.errors?.['required']" class="p-invalid-feedback">שדה חובה</p>
+            <p *ngIf="memberForm.get('firstname')?.errors?.['pattern']" class="p-invalid-feedback">שם פרטי מכיל רק אותיות בעברית ורווחים</p>
+        </div>
+    </div>
+    <div class="mb-3 mt-3">
+        <label for="lastname" class="form-label">שם משפחה:</label>
+        <input type="text" placeholder="שם משפחה" class="form-control" formControlName="lastname" [value]="this.ms.member.MemberLastname">
+        <div
+            *ngIf="memberForm.get('lastname')?.invalid && (memberForm.get('lastname')?.touched || memberForm.get('lastname')?.dirty)">
+            <p *ngIf="memberForm.get('lastname')?.errors?.['required']" class="p-invalid-feedback">שדה חובה</p>
+            <p *ngIf="memberForm.get('lastname')?.errors?.['pattern']" class="p-invalid-feedback">שם משפחה מכיל רק אותיות בעברית ורווחים</p>
+        </div>
+    </div>
+    <div class="mb-3 mt-3">
+        <label for="date" class="form-label">תאריך לידה:</label>
+        <input type="date" placeholder="תאריך לידה" class="form-control" formControlName="date" [value]="this.ms.member.MemberBirthdate">
+        <div
+            *ngIf="memberForm.get('date')?.invalid && (memberForm.get('date')?.touched || memberForm.get('date')?.dirty)">
+            <p *ngIf="memberForm.get('date')?.errors?.['required']" class="p-invalid-feedback">שדה חובה</p>
+        </div>
+    </div>
+    <div class="mb-3 mt-3">
+        <label for="street" class="form-label">רחוב:</label>
+        <input type="text" placeholder="רחוב" class="form-control" formControlName="street" [value]="this.ms.member.MemberAddressStreet">
+        <div
+            *ngIf="memberForm.get('street')?.invalid && (memberForm.get('street')?.touched || memberForm.get('street')?.dirty)">
+            <p *ngIf="memberForm.get('street')?.errors?.['required']" class="p-invalid-feedback">שדה חובה</p>
+            <p *ngIf="memberForm.get('street')?.errors?.['pattern']" class="p-invalid-feedback">שם רחוב מכיל אותיות
+                בעברית ורווחים בלבד</p>
+        </div>
+    </div>
+    <div class="mb-3 mt-3">
+        <label for="numBuilding" class="form-label">מספר בניין:</label>
+        <input type="number" placeholder="מספר בניין" class="form-control" formControlName="numBuilding" [value]="this.ms.member.MemberAddressBuildingNumber">
+        <div
+            *ngIf="memberForm.controls['numBuilding'].invalid && (memberForm.controls['numBuilding'].touched || memberForm.controls['numBuilding'].dirty)">
+            <p *ngIf="memberForm.controls['numBuilding'].hasError('required')" class="p-invalid-feedback">שדה חובה
+            </p>
+            <p *ngIf="memberForm.controls['numBuilding'].hasError('pattern')" class="p-invalid-feedback">מספר בניין
+                אינו חוקי</p>
+        </div>
+    </div>
+    <div class="mb-3 mt-3">
+    <label for="city" class="form-label">עיר מגורים:</label>
+    <select id="city" formControlName="city" class="form-control" required [value]="this.ms.member.MemberCityId">
+        <option *ngFor="let city of this.cs.allCities" [value]="city.CityId">{{city.CityName}}</option>
+    </select></div>
+    <div class="mb-3 mt-3">
+        <label for="phone" class="form-label">פלאפון:</label>
+        <input type="string" placeholder="פלאפון" class="form-control" formControlName="phone" [value]="this.ms.member.MemberPhone">
+        <div
+            *ngIf="memberForm.controls['phone'].invalid && (memberForm.controls['phone'].touched || memberForm.controls['phone'].dirty)">
+            <p *ngIf="memberForm.controls['phone'].hasError('pattern')" class="p-invalid-feedback">מספר פלאפון מכיל
+                10 ספרות בלבד</p>
+        </div>
+    </div>
+    <div class="mb-3 mt-3">
+        <label for="telephone"class="form-label">טלפון:</label>
+        <input type="string" placeholder="טלפון" class="form-control" formControlName="telephone" [value]="this.ms.member.MemberTelephone">
+        <div
+            *ngIf="memberForm.controls['telephone'].invalid && (memberForm.controls['telephone'].touched || memberForm.controls['telephone'].dirty)">
+            <p *ngIf="memberForm.controls['telephone'].hasError('pattern')" class="p-invalid-feedback">מספר טלפון
+                מכיל 9 או 10 ספרות בלבד</p>
+        </div>
+    </div>
+    <br><input type="submit" class="btn btn-secondary  btn-lg" [disabled]="!memberForm.valid">
+</form>
