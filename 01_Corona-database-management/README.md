@@ -99,6 +99,10 @@ This layer facilitates the conversion between regular classes in the database an
 **API Layer**
 In this layer, server requests are processed, and all CRUD operations are executed. It orchestrates the functions from the BLL.
 
+
+
+***Database***
+![tables](./screenShotes/database.png)
 ### City Table
 -for Cities
 
