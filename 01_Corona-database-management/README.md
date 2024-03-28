@@ -18,7 +18,7 @@ This project is aimed at managing a health maintenance organization's database, 
 ## Installation Guide
 
 1. **Download the Code from GitHub**:
-   - Open the project page on GitHub: [Corona Database Management-HMO](link-to-project-page-on-GitHub).
+   - Open the project page on GitHub: [Corona Database Management-HMO](https://github.com/Hadassa-E/HomeTest-H04).
    - Click on the "Code" button and then on "Download ZIP" to download the code to your computer.
 
 2. **Installation with Visual Studio 2022**:
@@ -87,18 +87,60 @@ For questions, issues, or suggestions, please open an issue on GitHub.
 6. **Running the Local Client**:
    - If you're using an Angular application, start the local client to begin working with the application.
 
+**DAL Layer**
+In this layer, I implemented database integration for the project and created CRUD functions to fetch data from each class (table) in the database.
 
-הטבלאות במסד הנתונים:
-1
-2
-3
-4
-5
+**BLL Layer**
+This layer handles validation checks for data input during record addition or update in the database. Additionally, I developed corresponding functions to those in the DAL layer, but here the functions accept and return DTO (Data Transfer Object) objects, which are the objects transmitted over the network.
 
-בשכבת הdalחיברתי את מסד הנתונים לפרויקט ויצרתי פונקציות crud  של שליפת נתונים מכל מחלקה - טבלה במסד נתונים
+**DTO Layer**
+This layer facilitates the conversion between regular classes in the database and classes transferred over the network, which have no entity relationships.
 
-BLL- בשכבה זו עשיתי בדיקות תקינות לנתונים שהוזנו להוספה או לעדכון רשומות בדאטה בייס. וכן כתבתי פונקציות מקבילות לפונקציות בשכבתהdal רק שכאן הפונקציה מקבלת ומחירה אובייקטים מסוג dto, כלומר האוביקטים שעוברים בשרת.
+**API Layer**
+In this layer, server requests are processed, and all CRUD operations are executed. It orchestrates the functions from the BLL.
 
-שכבת dto, בשכבה זו מתבצעת ההמרה בין המחלקות הרגילות במסד הנתונים, ובין המחלקות המועברות ברשת- שהן ללא קשרי הגומלין.
+### City Table
+-for Cities
 
-ובשכבת api מתבצעות קריאות השרת וכל הcrud  והוא מזמן את הפונקציות מBLL
+### CoronaInfection Table
+-for COVID-19 Infections
+
+### Member Table
+-for Health Insurance Members
+
+### Vaccine Table
+-for Vaccines 
+
+### VaccineType Table
+-for Vaccine Types
+
+### Expanded Functionality Details
+### Home Page:
+- **Description**: The home page features a menu allowing navigation between all health insurance members and adding a new member to the health insurance.
+- **Explanation**: The menu on the home page provides convenient access to all functionalities related to managing health insurance members.
+
+### Members Page:
+- **Description**: On this page, users can click on a specific member to view their details. Options are available for editing and deleting members.
+- **Screenshot**: ![Members Page](./screenShotes/MembersPage.png)
+- **Screenshot**: ![MoreDeataiesMember](./screenShotes/MoreDeataiesMember.png)
+- **Explanation**: Users can easily access and manage individual member details, including personal information and COVID-19 related data. If a member has contracted COVID-19, the dates of infection are displayed. Users can also add vaccination records for each member.
+
+### Adding a Member:
+- **Description**: Users have the option to add a new member to the health insurance.
+- **Screenshot**: ![Add Member](./screenShotes/AddMember.png)
+- **Explanation**: The "Add Member" feature allows users to enter the necessary information for a new health insurance member and save it to the database.
+
+### Editing a Member:
+- **Description**: Users can edit the details of an existing member.
+- **Screenshot**: ![Edit Member](./screenShotes/EditMember.png)
+- **Explanation**: By selecting the "Edit" option on a member's details page, users can modify the information stored for that member and update it in the database.
+
+### Adding a Vaccine to a Member:
+- **Description**: Users can add vaccination records for a specific member.
+- **Screenshot**: ![Add Vaccine](./screenShotes/AddVaccine.png)
+- **Explanation**: The "Add Vaccine" feature allows users to record vaccinations administered to a member, including the vaccine type and date of administration.
+
+### Adding a COVID-19 Infection to a Member:
+- **Description**: Users can record instances of COVID-19 infection for a member.
+- **Screenshot**: ![Add Infection](./screenShotes/AddInfection.png)
+- **Explanation**: The "Add Infection" feature allows users to specify if a member has contracted COVID-19, along with the date of infection.
